@@ -1,21 +1,33 @@
-class LinearSearch
+class BinarySearch 
 {
 	public static void main(String[] args)
 	{
-		int[] = {5,3,6,1,4,2};
-		int item = 9;
-		int temp = 0;
-		for(int i = 0; i<arr.length;i++)
+		int[]a = {2,5,7,9,12,14,16,17,19,20,24,28};
+		int srch = 16;
+		int li = 0;
+		int hi = a.length-1;
+		int mi = (li+hi)/2;
+		while(li<=hi)
 		{
-			if(arr[i] == item)
+			
+		
+			if(a[mi] == srch)
 			{
-				System.out.println("item is present at "+i+"index positon")
-				temp =  temp+1;
+				System.out.println("element is at "+mi+"index position");	
+			}
+			else if(a[mi]<srch)
+			{
+				li = mi+1;
+			}
+			else
+			{
+				hi = mi-1;	
 			}
 		}
-		if(temp == 0)
+		if(li>hi)
 		{
-			System.out.println("Element is not present in the list")
+			System.out.println("Element not found");
 		}
 	}
 }
+		
