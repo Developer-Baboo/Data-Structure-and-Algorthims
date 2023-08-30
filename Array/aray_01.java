@@ -1,7 +1,7 @@
 //Brute Force Method
 // ek element ek bar repate hona chaeya
 //time taking method
-class FindDuplicateElements1{
+/* class FindDuplicateElements1{
     public static void main(String[] args){
         int[] a = {3,4,4,2,2,1};
         System.out.print("Duplicate values are : ");
@@ -13,4 +13,8 @@ class FindDuplicateElements1{
             }   
         }
     }
-}
+} */
+
+//2nd Method 
+
+
