@@ -8,12 +8,10 @@ class BinarySearch
 		int hi = a.length-1;
 		int mi = (li+hi)/2;
 		while(li<=hi)
-		{
-			
-		
+		{		
 			if(a[mi] == srch)
 			{
-				System.out.println("element is at "+mi+"index position");	
+				System.out.println("Element is present at "+mi+" index positionnnnnn");	
 			}
 			else if(a[mi]<srch)
 			{
@@ -26,7 +24,7 @@ class BinarySearch
 		}
 		if(li>hi)
 		{
-			System.out.println("Element not found");
+			System.out.println("Element not found from array");
 		}
 	}
 }
