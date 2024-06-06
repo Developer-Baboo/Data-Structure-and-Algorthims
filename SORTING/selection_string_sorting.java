@@ -1,0 +1,38 @@
+class SelectionSort
+{
+    public static void main(String[] args)
+    {
+        // Array of strings to be sorted
+        String[] a = {"banana", "apple", "grape", "cherry", "mango", "blueberry", "fig"};
+        
+        // Variable to hold the index of the minimum value in the unsorted portion of the array
+        int min;
+        
+        // Temporary variable used for swapping elements
+        String temp;
+        
+        // Outer loop iterates over the entire array
+        for(int i = 0; i < a.length; i++){
+            // Assume the minimum value is at the current position i
+            min = i;
+            
+            // Inner loop to find the actual minimum value in the remaining unsorted portion of the array
+            for(int j = i+1; j < a.length; j++){
+                // If the current element is lexicographically less than the current minimum, update the minimum index
+                if(a[j].compareTo(a[min]) < 0){
+                    min = j;
+                }
+            }
+            
+            // Swap the current element with the found minimum element
+            temp = a[i];
+            a[i] = a[min];
+            a[min] = temp;
+        }
+        
+        // Print the sorted array
+        for(int i = 0; i < a.length; i++){
+            System.out.print(a[i] + " ");
+        }
+    }
+}
